@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience - Gloria Baker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+        <p>CSS Transitions + JavaScript Functions</p>
+    </header>
+
+    <main>
+        <!-- Part 1: CSS Transitions & Animations -->
+        <section id="css-section">
+            <h2>CSS Transitions & Animations</h2>
+            
+            <div class="transition-demo">
+                <h3>Hover Transitions</h3>
+                <button class="btn-hover">Hover Me</button>
+                <div class="color-box">Color Change</div>
+            </div>
+
+            <div class="animation-demo">
+                <h3>Keyframe Animations</h3>
+                <div class="pulse-box">Pulse Animation</div>
+                <div class="slide-box">Slide Animation</div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section id="js-section">
+            <h2>JavaScript Functions</h2>
+            
+            <div class="function-demo">
+                <h3>Scope & Parameters Demo</h3>
+                <button onclick="demoScope()">Test Function Scope</button>
+                <button onclick="demoParameters()">Test Parameters</button>
+                <p id="scope-result"></p>
+                <p id="param-result"></p>
+            </div>
+
+            <div class="calculation-demo">
+                <h3>Return Values Demo</h3>
+                <input type="number" id="num1" placeholder="Number 1">
+                <input type="number" id="num2" placeholder="Number 2">
+                <button onclick="calculateSum()">Calculate Sum</button>
+                <p id="calc-result"></p>
+            </div>
+        </section>
+
+        <!-- Part 3: Combined CSS + JavaScript -->
+        <section id="combined-section">
+            <h2>CSS + JavaScript Integration</h2>
+            
+            <div class="trigger-demo">
+                <h3>Animation Triggers</h3>
+                <button onclick="triggerAnimation('bounce')">Bounce Box</button>
+                <button onclick="triggerAnimation('spin')">Spin Box</button>
+                <button onclick="triggerAnimation('fade')">Fade Box</button>
+                <button onclick="resetAnimations()">Reset All</button>
+                
+                <div id="animated-box" class="animation-target">Animate Me!</div>
+            </div>
+
+            <div class="modal-demo">
+                <h3>Modal Popup</h3>
+                <button onclick="openModal()">Open Modal</button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span onclick="closeModal()" class="close">&times;</span>
+                        <p>This modal uses CSS animations triggered by JavaScript!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Week 7 Assignment - Gloria Baker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

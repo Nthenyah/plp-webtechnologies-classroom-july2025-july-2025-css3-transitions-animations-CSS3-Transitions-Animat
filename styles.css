@@ -1,0 +1,57 @@
+/* BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+/* PART 1: CSS TRANSITIONS */
+.btn-hover {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* KEYFRAME ANIMATIONS */
+.pulse-box {
+    width: 100px;
+    height: 100px;
+    background: #ffc107;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* PART 3: JS-TRIGGERED ANIMATIONS */
+.bounce {
+    animation: bounce 0.8s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
